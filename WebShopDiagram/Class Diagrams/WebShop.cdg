@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="WebShop">
+  <ClassDiagramComponents>
+    <Class name="TipoIdentificacion" package="" visibility="public" xPosition="50.0" yPosition="53.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vendedor" package="" visibility="public" xPosition="50.0" yPosition="201.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="IdPersona" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="256.0" yPosition="53.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="TipoIdentificacion" type="String" visibility="public"/>
+        <Field name="NumeroIdentificacion" type="String" visibility="public"/>
+        <Field name="Telefono" type="String" visibility="public"/>
+        <Field name="Email" type="String" visibility="public"/>
+        <Field name="FechaCreacion" type="DateTime" visibility="public"/>
+        <Field name="Estado" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="EstadoPersona" package="" visibility="public" xPosition="50.0" yPosition="353.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Factura" package="" visibility="public" xPosition="501.0" yPosition="53.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Fecha" type="DateTime" visibility="public"/>
+        <Field name="Persona" type="String" visibility="public"/>
+        <Field name="MetodoPago" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="501.0" yPosition="239.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="IdPersona" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="DetalleFactura" package="" visibility="public" xPosition="703.0" yPosition="53.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="IdFactura" type="String" visibility="public"/>
+        <Field name="Producto" type="String" visibility="public"/>
+        <Field name="Cantidad" type="Integer" visibility="public"/>
+        <Field name="Precio" type="Decimal" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="MetodoPago" package="" visibility="public" xPosition="703.0" yPosition="269.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+        <Field name="Banco" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Producto" package="" visibility="public" xPosition="901.0" yPosition="53.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+        <Field name="Descripcion" type="String" visibility="public"/>
+        <Field name="Precio" type="Double" visibility="public"/>
+        <Field name="Vendedor" type="String" visibility="public"/>
+        <Field name="Categoria" type="String" visibility="public"/>
+        <Field name="Estado" type="String" visibility="public"/>
+        <Field name="Uso" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="EstadoPublicacion" package="" visibility="public" xPosition="901.0" yPosition="315.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+        <Field name="Descripcion" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Promocion" package="" visibility="public" xPosition="1092.0" yPosition="53.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Porcentaje" type="Double" visibility="public"/>
+        <Field name="Producto" type="String" visibility="public"/>
+        <Field name="FechaInicio" type="DateTime" visibility="public"/>
+        <Field name="FechaFin" type="DateTime" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="UsoProducto" package="" visibility="public" xPosition="1092.0" yPosition="258.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ImagenProducto" package="" visibility="public" xPosition="1092.0" yPosition="409.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Url" type="String" visibility="public"/>
+        <Field name="Descripcion" type="String" visibility="public"/>
+        <Field name="Producto" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="CalifiacionProducto" package="" visibility="public" xPosition="1092.0" yPosition="603.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Valor" type="Integer" visibility="public"/>
+        <Field name="Comentario" type="String" visibility="public"/>
+        <Field name="PersonaCalifica" type="String" visibility="public"/>
+        <Field name="Producto" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Categoria" package="" visibility="public" xPosition="901.0" yPosition="474.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+        <Field name="Descripcion" type="String" visibility="public"/>
+        <Field name="CategoriaPadre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Banco" package="" visibility="public" xPosition="703.0" yPosition="455.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Direccion" package="" visibility="public" xPosition="501.0" yPosition="379.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="IdPersona" type="String" visibility="public"/>
+        <Field name="Direccion" type="String" visibility="public"/>
+        <Field name="Ciudad" type="String" visibility="public"/>
+        <Field name="PuntoReferencia" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Ciudad" package="" visibility="public" xPosition="703.0" yPosition="613.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+        <Field name="Departamento" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Departamento" package="" visibility="public" xPosition="703.0" yPosition="781.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+        <Field name="Pais" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Pais" package="" visibility="public" xPosition="703.0" yPosition="949.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Nombre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Busqueda" package="" visibility="public" xPosition="50.0" yPosition="613.0">
+      <Fields>
+        <Field name="Id" type="String" visibility="public"/>
+        <Field name="Fecha" type="DateTime" visibility="public"/>
+        <Field name="Producto" type="String" visibility="public"/>
+        <Field name="Persona" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
